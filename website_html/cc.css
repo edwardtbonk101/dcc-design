@@ -1,17 +1,41 @@
+/* FONTS */
+@font-face {
+    font-family: 'outagecut';
+    src: url('Fonts/outage_cut-webfont.eot');
+    src: url('Fonts/outage_cut-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/outage_cut-webfont.woff') format('woff'),
+         url('Fonts/outage_cut-webfont.ttf') format('truetype'),
+         url('Fonts/outage_cut-webfont.svg#outagecut') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=229f654c-f062-4aa1-9cd0-067c8b3f856d");
+@font-face{
+font-family:"Avenir Next LT W01 Demi";
+src:url("Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix");
+src:url("Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"),url("Fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"),url("Fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("truetype"),url("Fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
+}
+/* BODY */
 body{
 	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAKklEQVQIW2NkgIIHDx78BzEVFBQYQTSYAAnCBGBsRmRBZN24JXAahctyAIqBJ0WrJsZmAAAAAElFTkSuQmCC) 
   repeat;
 	margin:0;
+	font-family:"Avenir Next LT W01 Demi";
 }
+/* HEADER */
 header{
 	margin-top: 5em;
 	text-align: center;
-   border-bottom: #8A8A8A solid 1px;
+  border-bottom: #8A8A8A solid 1px;
+  font-size: .65em; 
 }
 header h3{
+	font-family: 'outagecut';
 	color: #bfbfbf;
-	border-top: #bfbfbf solid 1px;
-	border-bottom: #bfbfbf solid 1px;
+	border-top: #bfbfbf solid 2px;
+	border-bottom: #bfbfbf solid 2px;
 }
 #logo_info{
 	background-color: white;
@@ -34,7 +58,6 @@ header h3{
 	padding: 10px;
 }
 #text_right{
-	text-align: center;
 	padding: 10px;
 }
 header h2{
@@ -42,25 +65,26 @@ header h2{
 }
 header img{
 	position: relative;
+	width: 16em;
 }
 .title{
-	margin-bottom: 4em;
-	margin-top: -3em;
+	margin-bottom: 10em;
+	margin-top: -2em;
 }
-header .mission{
-	border-top: #8A8A8A solid 1px;
-	border-bottom: #8A8A8A solid 1px;
-	background-color: white;
-}
-
+/* INFO */
 .info{
 	background-color: #8a8a8a;
-	padding:70px;
+	padding:1em;
 	text-align: center;
 	border-top: #a3cd39 solid 8px;
+	font-size: 1.5em;
 }
-
-.upcomming_meetings{
+.info p{
+	padding-left: 2em;
+	padding-right: 2em;
+}
+/* UPCOMING MEETINGS */
+.upcoming_meetings{
 	width:100%;
 	margin:0 auto;
 	text-align: center;
@@ -71,16 +95,33 @@ header .mission{
   background-color: #3f3d3d;
   float: left;
 }
-#arrow1 {
-	margin-top: -7em;
+
+.upcoming_meetings h1 {
+	font-size: 1em;
+	font-weight: 100;
+	padding-top: .5em;
+	padding-bottom: 6em;
+	text-transform: uppercase;
 }
-#arrow2 {
-	margin-top: -7em;
+
+.upcoming_meetings h2{
+	font-family: 'outagecut';
+	letter-spacing: 0.15em;
 }
-.upcomming_meetings {
+
+#date_little h2{
+	margin-top: -4.5em;
+	color: #98c035;
+}
+#date_spark h2{
+	margin-top: -4.5em;	
+	color: #98c035;
+}
+.upcoming_meetings {
 	color: white;
 }
-.upcomming_meetings section{
+
+.upcoming_meetings section{
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-top: 25px;
@@ -90,32 +131,111 @@ header .mission{
 	width:19em;
 }
 
-.upcomming_meetings .wrap{
+.wrap{
 	display: inline-block;
 }
 .location_note{
 	clear:left;
 }
 
+/* PAST MEETINGS */
 .past_meetings{
-
+	font-family: 'outagecut';
+	text-align: center;
+	padding-bottom: 1em;
+	color: #555555;
+}
+.past_meetings section{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: #555555 solid 5px;
+	float:left;
+	width:19em;
+}
+.past_meetings h1 {
+	font-family:"Avenir Next LT W01 Demi";
+	font-size: 1em;
+	font-weight: 100;
+	padding-top: .5em;
+	margin-top: 35em;
+	text-transform: uppercase;
 }
 
+.past_meetings h3{
+	font-size: 1em;
+}
+.past_meetings h2{
+	font-size: 1.2em;
+}
+/* SOCIAL */
 .social{
 	background-color: #a3cd39;
 	text-align: center;
+	padding-left: 4em;
 }
 
 .social img{
 	float: right;
 }
+
+#social_text{
+	color:white;
+}
+
+/* FOOTER */
+
 footer{
 	padding:1em;
 	background-color: black;
 }
+
 footer p{
-	color: white;
+	color: #4c4c4c;
+	font-size: .70em;
+	text-transform: uppercase;
 }
+
+/* BUTTON */
+.upcoming_meetings .button {
+  margin: 55px;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  height: 12px;
+  text-align: center;
+   }
+  .button li {
+  margin-right: auto;
+    list-style: none;
+    text-align: center; }
+  .button a {
+  	color: #3f3d3d;
+  	margin-right: auto;
+    list-style: none;
+    background-color: #8A8A8A;
+    padding: 5px 14px;
+    text-align: center;
+    text-decoration: none;
+    font-family:"Avenir Next LT W01 Demi";
+    letter-spacing: .1em; }
+  .button a:hover {
+    background-color: #231F20; }
+  .button img {
+    margin-top: 3px;
+		margin-left: 9px;
+		position: absolute;}
+ .past_meetings .button{
+ 	margin-bottom: 1em;
+ }
+ .past_meetings .button a{
+ 		padding: 6px 30px 6px 30px;
+ 		background-color: white;
+ 		color: #555555;
+ 		font-family:"Avenir Next LT W01 Demi";
+ }
+ 	.button a:hover {
+    background-color: #231F20; }
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
