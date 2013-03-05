@@ -19,7 +19,7 @@ src:url("Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"),u
 }
 /* BODY */
 body{
-	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAKklEQVQIW2NkgIIHDx78BzEVFBQYQTSYAAnCBGBsRmRBZN24JXAahctyAIqBJ0WrJsZmAAAAAElFTkSuQmCC) 
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkAIIPHz78B9ECAgKMjCAOiAGTwBRA1wIAMZ4XowsOImwAAAAASUVORK5CYII=) 
   repeat;
 	margin:0;
 	font-family:"Avenir Next LT W01 Demi";
@@ -28,7 +28,7 @@ body{
 header{
 	margin-top: 5em;
 	text-align: center;
-  border-bottom: #8A8A8A solid 1px;
+  border-bottom: #7e9f2c solid 1px;
   font-size: .65em; 
 }
 header h3{
@@ -48,17 +48,27 @@ header h3{
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
-#logo_info span{
-	
-	padding: 10px;
-}
+
 #text_left{
-	margin-right: 31%;
+	margin-right: 16em;
 	text-align: center;
 	padding: 10px;
 }
+
+#text_left:before {
+    content: '> ';
+    color: #a3cd39;
+}
+
 #text_right{
 	padding: 10px;
+}
+#text_right:after {
+    content: '< ';
+    margin-left: 6px;
+    color: #a3cd39;
+}
+
 }
 header h2{
 	padding: 40px;
@@ -104,6 +114,25 @@ header img{
 	text-transform: uppercase;
 }
 
+.upcoming_meetings h1:before{
+	content: '\00a0';
+	background-color: white;
+	display: inline-block;
+	width: 35%;
+	height: 1px;
+	vertical-align: middle;
+	margin-right: 20px;
+
+}
+.upcoming_meetings h1:after{
+	content: '\00a0';
+	background-color: white;
+	display: inline-block;
+	width: 35%;
+	height: 1px;
+	vertical-align: middle;
+	margin-left: 20px;
+}
 .upcoming_meetings h2{
 	font-family: 'outagecut';
 	letter-spacing: 0.15em;
@@ -144,6 +173,7 @@ header img{
 	text-align: center;
 	padding-bottom: 1em;
 	color: #555555;
+	border-top: #555555 solid 2px;
 }
 .past_meetings section{
 	margin-left: 15px;
@@ -163,17 +193,57 @@ header img{
 	text-transform: uppercase;
 }
 
+.past_meetings h1:before{
+	content: '\00a0';
+	background-color: #555555;
+	display: inline-block;
+	width: 35%;
+	height: 1px;
+	vertical-align: middle;
+	margin-right: 20px;
+
+}
+.past_meetings h1:after{
+	content: '\00a0';
+	background-color: #555555;
+	display: inline-block;
+	width: 35%;
+	height: 1px;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+
 .past_meetings h3{
 	font-size: 1em;
 }
 .past_meetings h2{
 	font-size: 1.2em;
 }
+.past_meetings h3:before{
+	content: '\00a0';
+	background-color: #a3cd39;
+	display: inline-block;
+	width: 18px;
+	height: 3px;
+	vertical-align: middle;
+	margin-right: 6px;
+
+}
+.past_meetings h3:after{
+	content: '\00a0';
+	background-color: #a3cd39;
+	display: inline-block;
+	width: 18px;
+	height: 3px;
+	vertical-align: middle;
+	margin-left: 6px;
+}
 /* SOCIAL */
 .social{
 	background-color: #a3cd39;
 	text-align: center;
 	padding-left: 4em;
+	border-top: #7e9f2c solid 1px;
 }
 
 .social img{
@@ -229,13 +299,15 @@ footer p{
  	margin-bottom: 1em;
  }
  .past_meetings .button a{
- 		padding: 6px 30px 6px 30px;
+ 		padding: 6px 8px 6px 30px;
  		background-color: white;
  		color: #555555;
  		font-family:"Avenir Next LT W01 Demi";
  }
  	.button a:hover {
     background-color: #231F20; }
+
+/* BROWSER FIXES */
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
