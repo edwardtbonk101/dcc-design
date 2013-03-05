@@ -19,7 +19,7 @@ src:url("Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"),u
 }
 /* BODY */
 body{
-	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkAIIPHz78B9ECAgKMjCAOiAGTwBRA1wIAMZ4XowsOImwAAAAASUVORK5CYII=) 
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkAIJnz579B9FSUlKMjCAOiAGTwBRA1wIAKCAXZxKmiW0AAAAASUVORK5CYII=) 
   repeat;
 	margin:0;
 	font-family:"Avenir Next LT W01 Demi";
@@ -28,7 +28,7 @@ body{
 header{
 	margin-top: 5em;
 	text-align: center;
-  border-bottom: #7e9f2c solid 1px;
+  border-bottom: #7e9f2c solid 2px;
   font-size: .65em; 
 }
 header h3{
@@ -243,7 +243,7 @@ header img{
 	background-color: #a3cd39;
 	text-align: center;
 	padding-left: 4em;
-	border-top: #7e9f2c solid 1px;
+	border-top: #7e9f2c solid 2px;
 }
 
 .social img{
