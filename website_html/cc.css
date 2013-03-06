@@ -28,7 +28,6 @@ body{
 header{
 	margin-top: 5em;
 	text-align: center;
-  border-bottom: #7e9f2c solid 2px;
   font-size: .65em; 
 }
 header h3{
@@ -36,40 +35,32 @@ header h3{
 	color: #bfbfbf;
 	border-top: #bfbfbf solid 2px;
 	border-bottom: #bfbfbf solid 2px;
-}
-#logo_info{
+	margin-top: -19em;
+	margin-bottom: 8em;
 	background-color: white;
-	padding: 14px 0;
-	margin-top: -243;
-	margin-bottom: 112;
-	width: 100%;
+	padding: 3em;
 }
-#logo_info h3{
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-#text_left{
+.text_left{
 	margin-right: 16em;
-	text-align: center;
-	padding: 10px;
 }
 
-#text_left:before {
+.text_left:before {
     content: '> ';
     color: #a3cd39;
 }
-
-#text_right{
-	padding: 10px;
-}
-#text_right:after {
+.text_right:after {
     content: '< ';
     margin-left: 6px;
     color: #a3cd39;
 }
-
+header p{
+	font-size: 2em;
+	padding: 3em;
+	background-color: #8a8a8a;
+	margin-bottom: 0;
+	border-top: #a3cd39 solid 8px;
 }
+
 header h2{
 	padding: 40px;
 }
@@ -106,6 +97,30 @@ header img{
   float: left;
 }
 
+.upcoming_meetings article{
+	border: white solid 5px;
+	display: inline-block;
+	margin: 2em 1em 4em 1em;
+	padding-top: 4em;
+	width: 20em;
+	height: 14em;
+}
+
+.upcoming_meetings time{
+	color: #a3cd39;
+	font-family: 'outagecut';
+	position: absolute;
+	margin-left: 3.5em;
+	margin-top: -7em;
+	font-size: 1.5em;
+	letter-spacing: .2em;
+}
+
+.arrow{
+	position: absolute;
+	margin-top: -8em;
+	margin-left: 5em;
+}
 .upcoming_meetings h1 {
 	font-size: 1em;
 	font-weight: 100;
@@ -138,14 +153,6 @@ header img{
 	letter-spacing: 0.15em;
 }
 
-#date_little h2{
-	margin-top: -4.5em;
-	color: #98c035;
-}
-#date_spark h2{
-	margin-top: -4.5em;	
-	color: #98c035;
-}
 .upcoming_meetings {
 	color: white;
 }
@@ -174,6 +181,13 @@ header img{
 	padding-bottom: 1em;
 	color: #555555;
 	border-top: #555555 solid 2px;
+}
+
+.past_meetings li{
+	display: inline-block;
+	border: #555555 solid 5px;
+	margin: 1em 1em;
+	padding: 0.5em 3em;
 }
 .past_meetings section{
 	margin-left: 15px;
@@ -240,6 +254,7 @@ header img{
 }
 /* SOCIAL */
 .social{
+	color: white;
 	background-color: #a3cd39;
 	text-align: center;
 	padding-left: 4em;
@@ -250,8 +265,8 @@ header img{
 	float: right;
 }
 
-#social_text{
-	color:white;
+.social_text{
+	color:black;
 }
 
 /* FOOTER */
@@ -268,7 +283,7 @@ footer p{
 }
 
 /* BUTTON */
-.upcoming_meetings .button {
+ .upcoming_meetings .button {
   margin: 55px;
   margin-bottom: 3em;
   margin-top: 2em;
@@ -306,6 +321,7 @@ footer p{
  }
  	.button a:hover {
     background-color: #231F20; }
+
 
 /* BROWSER FIXES */
 .clearfix:before,
