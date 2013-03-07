@@ -17,6 +17,17 @@ font-family:"Avenir Next LT W01 Demi";
 src:url("Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix");
 src:url("Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"),url("Fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"),url("Fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("truetype"),url("Fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
 }
+
+@font-face {
+	font-family: 'Social-icons';
+	src:url('fonts/Social-icons.eot');
+	src:url('fonts/Social-icons.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Social-icons.woff') format('woff'),
+		url('fonts/Social-icons.ttf') format('truetype'),
+		url('fonts/Social-icons.svg#Social-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 /* BODY */
 body{
 	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkAIJnz579B9FSUlKMjCAOiAGTwBRA1wIAKCAXZxKmiW0AAAAASUVORK5CYII=) 
@@ -35,10 +46,10 @@ header h3{
 	color: #bfbfbf;
 	border-top: #bfbfbf solid 2px;
 	border-bottom: #bfbfbf solid 2px;
-	margin-top: -19em;
+	margin-top: -11em;
 	margin-bottom: 8em;
 	background-color: white;
-	padding: 3em;
+	padding: 2.5em;
 }
 .text_left{
 	margin-right: 16em;
@@ -101,25 +112,41 @@ header img{
 	border: white solid 5px;
 	display: inline-block;
 	margin: 2em 1em 4em 1em;
-	padding-top: 4em;
+	padding-top: 2em;
+	padding-bottom: 1em;
 	width: 20em;
-	height: 14em;
+	height: 15em;
 }
 
 .upcoming_meetings time{
 	color: #a3cd39;
 	font-family: 'outagecut';
 	position: absolute;
-	margin-left: 3.5em;
-	margin-top: -7em;
+	margin-left: .85em;
+	margin-top: -6em;
 	font-size: 1.5em;
 	letter-spacing: .2em;
 }
+.block{
+	background-color: #a3cd39;
+	margin-top: -5.5em;
+	width: 5em;
+	padding: 1.25em;
+	color: black;
+	font-size: 1em;
+	display: inline-block;
+	float: left;
+	margin-left: 6.2em;
+}
 
-.arrow{
-	position: absolute;
-	margin-top: -8em;
-	margin-left: 5em;
+.arrow-down{
+	width: 0em;
+	height: 0em;
+	border-left: 91px solid transparent;
+	border-right: 90px solid transparent;
+	border-top: 35px solid #a3cd39;
+	margin-top: -1.25em;
+	display: inline-block;
 }
 .upcoming_meetings h1 {
 	font-size: 1em;
@@ -202,8 +229,6 @@ header img{
 	font-family:"Avenir Next LT W01 Demi";
 	font-size: 1em;
 	font-weight: 100;
-	padding-top: .5em;
-	margin-top: 35em;
 	text-transform: uppercase;
 }
 
@@ -253,16 +278,45 @@ header img{
 	margin-left: 6px;
 }
 /* SOCIAL */
+.icon-twitter:before, .icon-github:before {
+	font-family: 'Social-icons';
+	speak: none;
+	font-size: 4em;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	color: black;
+	display: inline-block;
+	float: right;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+	content: "\e000";
+	padding-left: .5em;
+}
+.icon-github:before {
+	content: "\e001";
+	padding-right: 1em;
+	padding-left: .25em;
+}
+
+.icon-twitter:hover{
+	opacity: .5;
+}
+.icon-github:hover{
+  opacity: .5;
+}
+
 .social{
 	color: white;
 	background-color: #a3cd39;
 	text-align: center;
 	padding-left: 4em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	border-top: #7e9f2c solid 2px;
-}
-
-.social img{
-	float: right;
 }
 
 .social_text{
@@ -320,8 +374,12 @@ footer p{
  		font-family:"Avenir Next LT W01 Demi";
  }
  	.button a:hover {
-    background-color: #231F20; }
-
+    background-color: #231F20; 
+    -moz-transition: background-color .25s, -moz-transform .25s;
+    -webkit-transition: background-color .25s, -webkit-transform .25s;
+    -o-transition: background-color .25s, -o-transform .25s;
+    transition: background-color .25s, transform .25s;
+  }
 
 /* BROWSER FIXES */
 .clearfix:before,
