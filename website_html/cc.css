@@ -41,15 +41,18 @@ header{
 	text-align: center;
   font-size: .65em; 
 }
+header b{
+	border-top: #bfbfbf solid 2px;
+	border-bottom: #bfbfbf solid 2px;
+	padding: 1.5em;
+}
 header h3{
 	font-family: 'outagecut';
 	color: #bfbfbf;
-	border-top: #bfbfbf solid 2px;
-	border-bottom: #bfbfbf solid 2px;
 	margin-top: -11em;
 	margin-bottom: 8em;
 	background-color: white;
-	padding: 2.5em;
+	padding: 3.5em;
 }
 .text_left{
 	margin-right: 16em;
@@ -98,7 +101,7 @@ header img{
 /* UPCOMING MEETINGS */
 .upcoming_meetings{
 	width:100%;
-	margin:0 auto;
+	margin-bottom: 1em;
 	text-align: center;
 	background-image: url("img/background.jpg");
 	background-repeat: no-repeat;
