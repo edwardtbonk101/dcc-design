@@ -1,0 +1,60 @@
+header{
+	margin-top: 5em;
+	text-align: center;
+  font-size: .65em; 
+	b{
+		border-top: $llgray solid 2px;
+		border-bottom: $llgray solid 2px;
+		padding: 1.5em;
+	}
+	.logo{
+		font-family:$font2;
+		color: $llgray;
+		margin-top: -11em;
+		margin-bottom: 8em;
+		background-color: white;
+		padding: 3.5em;
+		font-size: 1.2em; 
+	}
+	.text_left{
+		margin-right: 16em;
+	}
+	.info{
+		font-size: 2em;
+		padding: 3em;
+		background-color: $lgray;
+		margin-bottom: 0;
+		border-top: $green solid 8px;
+	}
+	h2{
+		padding: 40px;
+	}
+	img{
+		position: relative;
+		width: 16em;
+	}
+	.title{
+		margin-bottom: 10em;
+		margin-top: -2em;
+	}
+}
+.info{
+	background-color: $lgray;
+	padding:1em;
+	text-align: center;
+	border-top: $green solid 8px;
+	font-size: 1.5em;
+	p{
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}
+.text_left:before {
+    content: '> ';
+    color: $green;
+}
+.text_right:after {
+    content: '< ';
+    margin-left: 6px;
+    color: $green;
+}

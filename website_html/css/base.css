@@ -1,0 +1,452 @@
+@import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=229f654c-f062-4aa1-9cd0-067c8b3f856d");
+@font-face {
+  font-family: "Avenir Next LT W01 Demi";
+  src: url("../Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix");
+  src: url("../Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"), url("../Fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"), url("../Fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("truetype"), url("../Fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
+}
+
+@font-face {
+  font-family: "outagecut";
+  src: url("../Fonts/outage_cut-webfont.eot");
+  src: url("../Fonts/outage_cut-webfont.eot?#iefix") format("embedded-opentype"), url("../Fonts/outage_cut-webfont.woff") format("woff"), url("../Fonts/outage_cut-webfont.ttf") format("truetype"), url("../Fonts/outage_cut-webfont.svg#outagecut") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Social-icons";
+  src: url("../fonts/Social-icons.eot");
+  src: url("../fonts/Social-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/Social-icons.woff") format("woff"), url("../fonts/Social-icons.ttf") format("truetype"), url("../fonts/Social-icons.svg#Social-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 1, ../scss/_body.scss */
+body {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkAIJnz579B9FSUlKMjCAOiAGTwBRA1wIAKCAXZxKmiW0AAAAASUVORK5CYII=) repeat;
+  margin: 0;
+  font-family: "Avenir Next LT W01 Demi";
+}
+
+/* line 8, ../scss/_body.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 12, ../scss/_body.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 19, ../scss/_body.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* BUTTON */
+/* line 24, ../scss/_body.scss */
+.button a {
+  color: #3f3d3d;
+  background-color: #8A8A8A;
+  padding: 5px 14px;
+  text-decoration: none;
+  letter-spacing: .1em;
+}
+
+/* line 1, ../scss/_header.scss */
+header {
+  margin-top: 5em;
+  text-align: center;
+  font-size: .65em;
+}
+/* line 5, ../scss/_header.scss */
+header b {
+  border-top: #bfbfbf solid 2px;
+  border-bottom: #bfbfbf solid 2px;
+  padding: 1.5em;
+}
+/* line 10, ../scss/_header.scss */
+header .logo {
+  font-family: "outagecut";
+  color: #bfbfbf;
+  margin-top: -11em;
+  margin-bottom: 8em;
+  background-color: white;
+  padding: 3.5em;
+  font-size: 1.2em;
+}
+/* line 19, ../scss/_header.scss */
+header .text_left {
+  margin-right: 16em;
+}
+/* line 22, ../scss/_header.scss */
+header .info {
+  font-size: 2em;
+  padding: 3em;
+  background-color: #8a8a8a;
+  margin-bottom: 0;
+  border-top: #a3cd39 solid 8px;
+}
+/* line 29, ../scss/_header.scss */
+header h2 {
+  padding: 40px;
+}
+/* line 32, ../scss/_header.scss */
+header img {
+  position: relative;
+  width: 16em;
+}
+/* line 36, ../scss/_header.scss */
+header .title {
+  margin-bottom: 10em;
+  margin-top: -2em;
+}
+
+/* line 41, ../scss/_header.scss */
+.info {
+  background-color: #8a8a8a;
+  padding: 1em;
+  text-align: center;
+  border-top: #a3cd39 solid 8px;
+  font-size: 1.5em;
+}
+/* line 47, ../scss/_header.scss */
+.info p {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* line 52, ../scss/_header.scss */
+.text_left:before {
+  content: '> ';
+  color: #a3cd39;
+}
+
+/* line 56, ../scss/_header.scss */
+.text_right:after {
+  content: '< ';
+  margin-left: 6px;
+  color: #a3cd39;
+}
+
+/* UPCOMING MEETINGS */
+/* line 2, ../scss/_upmeetings.scss */
+.upcoming_meetings {
+  width: 100%;
+  margin-bottom: 1em;
+  text-align: center;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #3f3d3d;
+  float: left;
+  color: white;
+}
+/* line 13, ../scss/_upmeetings.scss */
+.upcoming_meetings article {
+  border: white solid 5px;
+  display: inline-block;
+  margin: 2em 1em 4em 1em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  width: 20em;
+  height: 15em;
+}
+/* line 22, ../scss/_upmeetings.scss */
+.upcoming_meetings time {
+  color: #a3cd39;
+  font-family: "outagecut";
+  position: absolute;
+  margin-left: .85em;
+  margin-top: -6em;
+  font-size: 1.5em;
+  letter-spacing: .2em;
+}
+/* line 31, ../scss/_upmeetings.scss */
+.upcoming_meetings h1 {
+  font-size: 1em;
+  font-weight: 100;
+  padding-top: .5em;
+  padding-bottom: 6em;
+  text-transform: uppercase;
+}
+/* line 37, ../scss/_upmeetings.scss */
+.upcoming_meetings h1:before {
+  content: '\00a0';
+  background-color: white;
+  display: inline-block;
+  width: 35%;
+  height: 1px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+/* line 46, ../scss/_upmeetings.scss */
+.upcoming_meetings h1:after {
+  content: '\00a0';
+  background-color: white;
+  display: inline-block;
+  width: 35%;
+  height: 1px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+/* line 56, ../scss/_upmeetings.scss */
+.upcoming_meetings h2 {
+  font-family: "outagecut";
+  letter-spacing: 0.15em;
+}
+/* line 60, ../scss/_upmeetings.scss */
+.upcoming_meetings section {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: white solid 5px;
+  float: left;
+  width: 19em;
+}
+/* line 69, ../scss/_upmeetings.scss */
+.upcoming_meetings .button {
+  margin: 55px;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  height: 12px;
+}
+/* line 74, ../scss/_upmeetings.scss */
+.upcoming_meetings .button a:hover {
+  background-color: #231F20;
+  -moz-transition: background-color 0.25s, -moz-transform 0.25s;
+  -webkit-transition: background-color 0.25s, -webkit-transform 0.25s;
+  -o-transition: background-color 0.25s, -o-transform 0.25s;
+  transition: background-color 0.25s, transform 0.25s;
+}
+/* line 82, ../scss/_upmeetings.scss */
+.upcoming_meetings .address {
+  font-size: 1.3em;
+}
+/* line 85, ../scss/_upmeetings.scss */
+.upcoming_meetings .wrap {
+  display: inline-block;
+}
+
+/* line 89, ../scss/_upmeetings.scss */
+.block {
+  background-color: #a3cd39;
+  margin-top: -5.5em;
+  width: 5em;
+  padding: 1.25em;
+  color: black;
+  font-size: 1em;
+  display: inline-block;
+  float: left;
+  margin-left: 6.2em;
+}
+
+/* line 100, ../scss/_upmeetings.scss */
+.arrow-down {
+  width: 0em;
+  height: 0em;
+  border-left: 91px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 35px solid #a3cd39;
+  margin-top: -1.25em;
+  display: inline-block;
+}
+
+/* line 109, ../scss/_upmeetings.scss */
+.location_note {
+  clear: left;
+}
+
+/* line 1, ../scss/_pastmeetings.scss */
+.past_meetings {
+  font-family: "outagecut";
+  text-align: center;
+  padding-bottom: 1em;
+  color: #555555;
+  border-top: #555555 solid 2px;
+}
+/* line 7, ../scss/_pastmeetings.scss */
+.past_meetings li {
+  display: inline-block;
+  border: #555555 solid 5px;
+  margin: 1em 1em;
+  padding: 1.5em 1em 0.5em 1em;
+}
+/* line 13, ../scss/_pastmeetings.scss */
+.past_meetings section {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: #555555 solid 5px;
+  float: left;
+  width: 19em;
+}
+/* line 22, ../scss/_pastmeetings.scss */
+.past_meetings h1 {
+  font-family: "Avenir Next LT W01 Demi";
+  font-size: 1em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+/* line 27, ../scss/_pastmeetings.scss */
+.past_meetings h1:after {
+  content: '\00a0';
+  background-color: #555555;
+  display: inline-block;
+  width: 35%;
+  height: 1px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+/* line 36, ../scss/_pastmeetings.scss */
+.past_meetings h1:before {
+  content: '\00a0';
+  background-color: #555555;
+  display: inline-block;
+  width: 35%;
+  height: 1px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+/* line 46, ../scss/_pastmeetings.scss */
+.past_meetings h2 {
+  font-size: 1.2em;
+  max-width: 17em;
+  margin-bottom: 1em;
+}
+/* line 51, ../scss/_pastmeetings.scss */
+.past_meetings h3 {
+  font-size: 1em;
+}
+/* line 54, ../scss/_pastmeetings.scss */
+.past_meetings time {
+  font-size: 1.2em;
+}
+/* line 56, ../scss/_pastmeetings.scss */
+.past_meetings time:before {
+  content: '\00a0';
+  background-color: #a3cd39;
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+/* line 65, ../scss/_pastmeetings.scss */
+.past_meetings time:after {
+  content: '\00a0';
+  background-color: #a3cd39;
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+/* line 75, ../scss/_pastmeetings.scss */
+.past_meetings .button {
+  margin-bottom: 1em;
+  font-family: "Avenir Next LT W01 Demi";
+}
+/* line 78, ../scss/_pastmeetings.scss */
+.past_meetings .button img {
+  margin-top: 3px;
+  margin-left: 9px;
+  position: absolute;
+}
+/* line 83, ../scss/_pastmeetings.scss */
+.past_meetings .button a {
+  padding: 6px 8px 6px 30px;
+  background-color: white;
+  color: #555555;
+}
+/* line 87, ../scss/_pastmeetings.scss */
+.past_meetings .button a:hover {
+  background-color: #231F20;
+  -moz-transition: background-color 0.25s, -moz-transform 0.25s;
+  -webkit-transition: background-color 0.25s, -webkit-transform 0.25s;
+  -o-transition: background-color 0.25s, -o-transform 0.25s;
+  transition: background-color 0.25s, transform 0.25s;
+}
+
+/* SOCIAL */
+/* line 2, ../scss/_social.scss */
+.social {
+  color: white;
+  background-color: #a3cd39;
+  text-align: center;
+  padding-left: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: #7e9f2c solid 2px;
+}
+/* line 10, ../scss/_social.scss */
+.social .social_text {
+  color: black;
+}
+
+/* line 14, ../scss/_social.scss */
+.icon-twitter:before, .icon-github:before {
+  font-family: 'Social-icons';
+  speak: none;
+  font-size: 4em;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: black;
+  display: inline-block;
+  float: right;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 28, ../scss/_social.scss */
+.icon-twitter:before {
+  content: "\e000";
+  padding-left: .5em;
+}
+
+/* line 32, ../scss/_social.scss */
+.icon-github:before {
+  content: "\e001";
+  padding-right: 1em;
+  padding-left: .25em;
+}
+
+/* line 37, ../scss/_social.scss */
+.icon-twitter:hover {
+  opacity: .5;
+}
+
+/* line 40, ../scss/_social.scss */
+.icon-github:hover {
+  opacity: .5;
+}
+
+/* FOOTER */
+/* line 3, ../scss/_footer.scss */
+footer {
+  padding: 1em;
+  background-color: black;
+}
+/* line 6, ../scss/_footer.scss */
+footer small {
+  font-size: .70em;
+  padding-left: 5em;
+}
+/* line 10, ../scss/_footer.scss */
+footer p {
+  color: #4c4c4c;
+  text-transform: uppercase;
+}
