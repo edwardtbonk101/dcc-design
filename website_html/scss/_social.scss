@@ -3,15 +3,18 @@
 	color: white;
 	background-color: $green;
 	text-align: center;
-	padding-left: 4em;
-	padding-top: 1em;
 	padding-bottom: 1em;
 	border-top: #7e9f2c solid 2px;
 	.social_text{
 		color:black;
+		display: inline-block;
+	}
+	p{
+		margin-right: 12%;
+		margin-left: 12%;
 	}
 }
-.icon-twitter:before, .icon-github:before {
+.icon-twitter:before, .icon-github:after {
 	font-family: 'Social-icons';
 	speak: none;
 	font-size: 4em;
@@ -21,22 +24,33 @@
 	text-transform: none;
 	line-height: 1;
 	color: black;
-	display: inline-block;
-	float: right;
 	-webkit-font-smoothing: antialiased;
 }
 .icon-twitter:before {
 	content: "\e000";
-	padding-left: .5em;
 }
-.icon-github:before {
+.icon-github:after {
 	content: "\e001";
-	padding-right: 1em;
 	padding-left: .25em;
 }
-.icon-twitter:hover{
-	opacity: .5;
-}
-.icon-github:hover{
-  opacity: .5;
+
+@media(min-width: 880px){
+	.social{
+		.icon-twitter:before {
+			margin-top: -1em;
+			padding-left: .25em;
+			float: right;
+			margin-right: 1.75em;
+		}
+		.icon-github:after {
+			margin-top: -1em;
+			margin-right: 0.5em;
+			float: right;
+		}
+		p{
+			margin-right: 14em;
+			padding-left: 7%;
+			padding: 1em 0;
+		}
+	}
 }

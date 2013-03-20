@@ -4,11 +4,15 @@
 	padding-bottom: 1em;
 	color: $dgray;
 	border-top: $dgray solid 2px;
-	li{
-		display: inline-block;
-		border: $dgray solid 5px;
-		margin: 1em 1em;
-		padding: 1.5em 1em 0.5em 1em;
+	ol{
+		padding-right: 3.5%;
+		padding-left: 3.5%;
+		li{
+			display: inline-block;
+			border: $dgray solid 5px;
+			margin: 1em 1em;
+			padding: 1.5em 1em 0.5em 1em;
+		}
 	}
 	section{
 		margin-left: 15px;
@@ -24,24 +28,6 @@
 		font-size: 1em;
 		font-weight: 100;
 		text-transform: uppercase;
-		&:after{
-			content: '\00a0';
-			background-color: $dgray;
-			display: inline-block;
-			width: 35%;
-			height: 1px;
-			vertical-align: middle;
-			margin-left: 20px;
-		}
-		&:before{
-			content: '\00a0';
-			background-color: $dgray;
-			display: inline-block;
-			width: 35%;
-			height: 1px;
-			vertical-align: middle;
-			margin-right: 20px;
-		}
 	}
 	h2{
 		font-size: 1.2em;
@@ -95,6 +81,28 @@
   }
 }
 
+@media(min-width: 730px){
+	h1{
+		&:after{
+			content: '\00a0';
+			background-color: $dgray;
+			display: inline-block;
+			width: 35%;
+			height: 1px;
+			vertical-align: middle;
+			margin-left: 20px;
+		}
+		&:before{
+			content: '\00a0';
+			background-color: $dgray;
+			display: inline-block;
+			width: 35%;
+			height: 1px;
+			vertical-align: middle;
+			margin-right: 20px;
+		}
+	}
+}
   
 
 

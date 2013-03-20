@@ -2,22 +2,21 @@ header{
 	margin-top: 5em;
 	text-align: center;
   font-size: .65em; 
-	b{
-		border-top: $llgray solid 2px;
-		border-bottom: $llgray solid 2px;
-		padding: 1.5em;
-	}
 	.logo{
-		font-family:$font2;
-		color: $llgray;
-		margin-top: -11em;
-		margin-bottom: 8em;
+		font-family: "outagecut";
+		color: #bfbfbf;
+		margin-top: 2em;
+		margin-bottom: 3em;
 		background-color: white;
-		padding: 3.5em;
-		font-size: 1.2em; 
+		padding: 1.5em;
+		font-size: 1.2em;
 	}
 	.text_left{
-		margin-right: 16em;
+		margin-right: 1em;
+	}
+	.text_right{
+		display: block;
+		margin-top: 2em;
 	}
 	.info{
 		font-size: 2em;
@@ -31,10 +30,9 @@ header{
 	}
 	img{
 		position: relative;
-		width: 16em;
+		width: 14em;
 	}
 	.title{
-		margin-bottom: 10em;
 		margin-top: -2em;
 	}
 }
@@ -43,7 +41,7 @@ header{
 	padding:1em;
 	text-align: center;
 	border-top: $green solid 8px;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	p{
 		padding-left: 2em;
 		padding-right: 2em;
@@ -57,4 +55,73 @@ header{
     content: '< ';
     margin-left: 6px;
     color: $green;
+}
+@media(min-width: 605px){
+	header{
+		b{
+			border-top: $llgray solid 2px;
+			border-bottom: $llgray solid 2px;
+			padding: 1.5em 0em 1.5em 0em;
+		}
+		.text_left{
+			margin-right: 0em;
+		}
+		.text_right{
+			margin-top: 0em;
+			display: inline;
+		}
+		.title{
+			margin-top: -2em;
+		}
+		.logo{
+			margin-top: 2em;
+			padding: 3em 2em;
+		}
+	}
+}
+@media(min-width: 900px){
+	header{
+		margin-top: 5em;
+		text-align: center;
+	  font-size: .65em; 
+		b{
+			border-top: $llgray solid 2px;
+			border-bottom: $llgray solid 2px;
+			padding: 1.5em;
+		}
+		.logo{
+			font-family:$font2;
+			color: $llgray;
+			margin-top: -11em;
+			margin-bottom: 8em;
+			background-color: white;
+			padding: 3em;
+			font-size: 1.2em; 
+		}
+		.text_left{
+			margin-right: 16em;
+		}
+		.text_right{
+			margin-top: 0em;
+			margin-right: -0.5em;
+		}
+		.info{
+			font-size: 2em;
+			padding: 3em;
+			background-color: $lgray;
+			margin-bottom: 0;
+			border-top: $green solid 8px;
+		}
+		h2{
+			padding: 40px;
+		}
+		img{
+			position: relative;
+			width: 16em;
+		}
+		.title{
+			margin-bottom: 10em;
+			margin-top: -2em;
+		}
+	}
 }

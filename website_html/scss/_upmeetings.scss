@@ -13,11 +13,17 @@
 	article{
 		border: white solid 5px;
 		display: inline-block;
-		margin: 2em 1em 4em 1em;
+		margin: 2em 1em 7em 1em;
 		padding-top: 2em;
 		padding-bottom: 1em;
 		width: 20em;
 		height: 15em;
+	}
+	.sparkbox{
+		margin-bottom: 7em;
+	}
+	.little_lines{
+		margin-bottom: 2em;
 	}
 	time{
 		color: $green;
@@ -34,28 +40,14 @@
 		padding-top: .5em;
 		padding-bottom: 6em;
 		text-transform: uppercase;
-		&:before{
-			content: '\00a0';
-			background-color: white;
-			display: inline-block;
-			width: 35%;
-			height: 1px;
-			vertical-align: middle;
-			margin-right: 20px;
-		}
-		&:after{
-			content: '\00a0';
-			background-color: white;
-			display: inline-block;
-			width: 35%;
-			height: 1px;
-			vertical-align: middle;
-			margin-left: 20px;
-		}
 	}
 	h2{
 		font-family:$font2;
 		letter-spacing: 0.15em;
+	}
+	p{
+		padding-right: 10%;
+		padding-left: 10%;
 	}
 	section{
 		margin-left: 15px;
@@ -108,4 +100,35 @@
 }
 .location_note{
 	clear:left;
+}
+
+@media(min-width: 740px){
+	.upcoming_meetings{
+		article{
+			margin: 2em 1em 3em 1em;
+		}
+		.sparkbox{
+			margin-bottom: 3em;
+		}
+		h1{
+			&:before{
+				content: '\00a0';
+				background-color: white;
+				display: inline-block;
+				width: 35%;
+				height: 1px;
+				vertical-align: middle;
+				margin-right: 20px;
+			}
+			&:after{
+				content: '\00a0';
+				background-color: white;
+				display: inline-block;
+				width: 35%;
+				height: 1px;
+				vertical-align: middle;
+				margin-left: 20px;
+			}
+		}
+	}
 }
