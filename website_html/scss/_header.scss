@@ -19,11 +19,14 @@ header{
 		margin-top: 2em;
 	}
 	.info{
-		font-size: 2em;
-		padding: 3em;
+		padding: 1em 3em;
 		background-color: $lgray;
-		margin-bottom: 0;
 		border-top: $green solid 8px;
+		p{
+			display: inline-block;
+			font-size: 2em;
+			max-width: 27em;
+		}
 	}
 	h2{
 		padding: 40px;
@@ -36,17 +39,7 @@ header{
 		margin-top: -2em;
 	}
 }
-.info{
-	background-color: $lgray;
-	padding:1em;
-	text-align: center;
-	border-top: $green solid 8px;
-	font-size: 1.2em;
-	p{
-		padding-left: 2em;
-		padding-right: 2em;
-	}
-}
+
 .text_left:before {
     content: '> ';
     color: $green;
@@ -81,22 +74,14 @@ header{
 }
 @media(min-width: 900px){
 	header{
-		margin-top: 5em;
-		text-align: center;
-	  font-size: .65em; 
 		b{
 			border-top: $llgray solid 2px;
 			border-bottom: $llgray solid 2px;
 			padding: 1.5em;
 		}
 		.logo{
-			font-family:$font2;
-			color: $llgray;
 			margin-top: -11em;
 			margin-bottom: 8em;
-			background-color: white;
-			padding: 3em;
-			font-size: 1.2em; 
 		}
 		.text_left{
 			margin-right: 16em;
@@ -105,18 +90,10 @@ header{
 			margin-top: 0em;
 			margin-right: -0.5em;
 		}
-		.info{
-			font-size: 2em;
-			padding: 3em;
-			background-color: $lgray;
-			margin-bottom: 0;
-			border-top: $green solid 8px;
-		}
 		h2{
 			padding: 40px;
 		}
 		img{
-			position: relative;
 			width: 16em;
 		}
 		.title{

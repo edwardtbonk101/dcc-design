@@ -88,47 +88,37 @@ header .text_right {
 }
 /* line 21, ../scss/_header.scss */
 header .info {
-  font-size: 2em;
-  padding: 3em;
+  padding: 1em 3em;
   background-color: #8a8a8a;
-  margin-bottom: 0;
   border-top: #a3cd39 solid 8px;
 }
-/* line 28, ../scss/_header.scss */
+/* line 25, ../scss/_header.scss */
+header .info p {
+  display: inline-block;
+  font-size: 2em;
+  max-width: 27em;
+}
+/* line 31, ../scss/_header.scss */
 header h2 {
   padding: 40px;
 }
-/* line 31, ../scss/_header.scss */
+/* line 34, ../scss/_header.scss */
 header img {
   position: relative;
   width: 14em;
 }
-/* line 35, ../scss/_header.scss */
+/* line 38, ../scss/_header.scss */
 header .title {
   margin-top: -2em;
 }
 
-/* line 39, ../scss/_header.scss */
-.info {
-  background-color: #8a8a8a;
-  padding: 1em;
-  text-align: center;
-  border-top: #a3cd39 solid 8px;
-  font-size: 1.2em;
-}
-/* line 45, ../scss/_header.scss */
-.info p {
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-/* line 50, ../scss/_header.scss */
+/* line 43, ../scss/_header.scss */
 .text_left:before {
   content: '> ';
   color: #a3cd39;
 }
 
-/* line 54, ../scss/_header.scss */
+/* line 47, ../scss/_header.scss */
 .text_right:after {
   content: '< ';
   margin-left: 6px;
@@ -136,81 +126,61 @@ header .title {
 }
 
 @media (min-width: 605px) {
-  /* line 61, ../scss/_header.scss */
+  /* line 54, ../scss/_header.scss */
   header b {
     border-top: #bfbfbf solid 2px;
     border-bottom: #bfbfbf solid 2px;
     padding: 1.5em 0em 1.5em 0em;
   }
-  /* line 66, ../scss/_header.scss */
+  /* line 59, ../scss/_header.scss */
   header .text_left {
     margin-right: 0em;
   }
-  /* line 69, ../scss/_header.scss */
+  /* line 62, ../scss/_header.scss */
   header .text_right {
     margin-top: 0em;
     display: inline;
   }
-  /* line 73, ../scss/_header.scss */
+  /* line 66, ../scss/_header.scss */
   header .title {
     margin-top: -2em;
   }
-  /* line 76, ../scss/_header.scss */
+  /* line 69, ../scss/_header.scss */
   header .logo {
     margin-top: 2em;
     padding: 3em 2em;
   }
 }
 @media (min-width: 900px) {
-  /* line 83, ../scss/_header.scss */
-  header {
-    margin-top: 5em;
-    text-align: center;
-    font-size: .65em;
-  }
-  /* line 87, ../scss/_header.scss */
+  /* line 77, ../scss/_header.scss */
   header b {
     border-top: #bfbfbf solid 2px;
     border-bottom: #bfbfbf solid 2px;
     padding: 1.5em;
   }
-  /* line 92, ../scss/_header.scss */
+  /* line 82, ../scss/_header.scss */
   header .logo {
-    font-family: "outagecut";
-    color: #bfbfbf;
     margin-top: -11em;
     margin-bottom: 8em;
-    background-color: white;
-    padding: 3em;
-    font-size: 1.2em;
   }
-  /* line 101, ../scss/_header.scss */
+  /* line 86, ../scss/_header.scss */
   header .text_left {
     margin-right: 16em;
   }
-  /* line 104, ../scss/_header.scss */
+  /* line 89, ../scss/_header.scss */
   header .text_right {
     margin-top: 0em;
     margin-right: -0.5em;
   }
-  /* line 108, ../scss/_header.scss */
-  header .info {
-    font-size: 2em;
-    padding: 3em;
-    background-color: #8a8a8a;
-    margin-bottom: 0;
-    border-top: #a3cd39 solid 8px;
-  }
-  /* line 115, ../scss/_header.scss */
+  /* line 93, ../scss/_header.scss */
   header h2 {
     padding: 40px;
   }
-  /* line 118, ../scss/_header.scss */
+  /* line 96, ../scss/_header.scss */
   header img {
-    position: relative;
     width: 16em;
   }
-  /* line 122, ../scss/_header.scss */
+  /* line 99, ../scss/_header.scss */
   header .title {
     margin-bottom: 10em;
     margin-top: -2em;
@@ -237,18 +207,14 @@ header .title {
   margin: 2em 1em 7em 1em;
   padding-top: 2em;
   padding-bottom: 1em;
-  width: 20em;
-  height: 15em;
+  width: 60%;
+  min-width: 19.5em;
 }
 /* line 22, ../scss/_upmeetings.scss */
-.upcoming_meetings .sparkbox {
-  margin-bottom: 7em;
-}
-/* line 25, ../scss/_upmeetings.scss */
 .upcoming_meetings .little_lines {
   margin-bottom: 2em;
 }
-/* line 28, ../scss/_upmeetings.scss */
+/* line 25, ../scss/_upmeetings.scss */
 .upcoming_meetings time {
   color: #a3cd39;
   font-family: "outagecut";
@@ -258,7 +224,7 @@ header .title {
   font-size: 1.5em;
   letter-spacing: .2em;
 }
-/* line 37, ../scss/_upmeetings.scss */
+/* line 34, ../scss/_upmeetings.scss */
 .upcoming_meetings h1 {
   font-size: 1em;
   font-weight: 100;
@@ -266,17 +232,17 @@ header .title {
   padding-bottom: 6em;
   text-transform: uppercase;
 }
-/* line 44, ../scss/_upmeetings.scss */
+/* line 41, ../scss/_upmeetings.scss */
 .upcoming_meetings h2 {
   font-family: "outagecut";
   letter-spacing: 0.15em;
 }
-/* line 48, ../scss/_upmeetings.scss */
+/* line 45, ../scss/_upmeetings.scss */
 .upcoming_meetings p {
   padding-right: 10%;
   padding-left: 10%;
 }
-/* line 52, ../scss/_upmeetings.scss */
+/* line 49, ../scss/_upmeetings.scss */
 .upcoming_meetings section {
   margin-left: 15px;
   margin-right: 15px;
@@ -286,14 +252,13 @@ header .title {
   float: left;
   width: 19em;
 }
-/* line 61, ../scss/_upmeetings.scss */
+/* line 58, ../scss/_upmeetings.scss */
 .upcoming_meetings .button {
-  margin: 55px;
   margin-bottom: 3em;
   margin-top: 2em;
   height: 12px;
 }
-/* line 66, ../scss/_upmeetings.scss */
+/* line 62, ../scss/_upmeetings.scss */
 .upcoming_meetings .button a:hover {
   background-color: #231F20;
   -moz-transition: background-color 0.25s, -moz-transform 0.25s;
@@ -301,16 +266,16 @@ header .title {
   -o-transition: background-color 0.25s, -o-transform 0.25s;
   transition: background-color 0.25s, transform 0.25s;
 }
-/* line 74, ../scss/_upmeetings.scss */
+/* line 70, ../scss/_upmeetings.scss */
 .upcoming_meetings .address {
   font-size: 1.3em;
 }
-/* line 77, ../scss/_upmeetings.scss */
+/* line 73, ../scss/_upmeetings.scss */
 .upcoming_meetings .wrap {
   display: inline-block;
 }
 
-/* line 81, ../scss/_upmeetings.scss */
+/* line 77, ../scss/_upmeetings.scss */
 .block {
   background-color: #a3cd39;
   margin-top: -5.5em;
@@ -319,36 +284,35 @@ header .title {
   color: black;
   font-size: 1em;
   display: inline-block;
-  float: left;
-  margin-left: 6.2em;
+  position: absolute;
+  margin-left: 1.95em;
 }
 
-/* line 92, ../scss/_upmeetings.scss */
+/* line 88, ../scss/_upmeetings.scss */
 .arrow-down {
-  width: 0em;
-  height: 0em;
-  border-left: 91px solid transparent;
-  border-right: 90px solid transparent;
-  border-top: 35px solid #a3cd39;
+  border-left: 5.9em solid transparent;
+  border-right: 5.7em solid transparent;
+  border-top: 2.4em solid #a3cd39;
   margin-top: -1.25em;
   display: inline-block;
 }
 
-/* line 101, ../scss/_upmeetings.scss */
+/* line 95, ../scss/_upmeetings.scss */
 .location_note {
   clear: left;
 }
 
 @media (min-width: 740px) {
-  /* line 107, ../scss/_upmeetings.scss */
+  /* line 101, ../scss/_upmeetings.scss */
   .upcoming_meetings article {
-    margin: 2em 1em 3em 1em;
+    width: 30%;
+    max-width: 28em;
   }
-  /* line 110, ../scss/_upmeetings.scss */
+  /* line 105, ../scss/_upmeetings.scss */
   .upcoming_meetings .sparkbox {
     margin-bottom: 3em;
   }
-  /* line 114, ../scss/_upmeetings.scss */
+  /* line 109, ../scss/_upmeetings.scss */
   .upcoming_meetings h1:before {
     content: '\00a0';
     background-color: white;
@@ -358,7 +322,7 @@ header .title {
     vertical-align: middle;
     margin-right: 20px;
   }
-  /* line 123, ../scss/_upmeetings.scss */
+  /* line 118, ../scss/_upmeetings.scss */
   .upcoming_meetings h1:after {
     content: '\00a0';
     background-color: white;
@@ -373,16 +337,15 @@ header .title {
 .past_meetings {
   font-family: "outagecut";
   text-align: center;
-  padding-bottom: 1em;
+  padding: 2em 0;
   color: #555555;
-  border-top: #555555 solid 2px;
 }
-/* line 7, ../scss/_pastmeetings.scss */
+/* line 6, ../scss/_pastmeetings.scss */
 .past_meetings ol {
   padding-right: 3.5%;
   padding-left: 3.5%;
 }
-/* line 10, ../scss/_pastmeetings.scss */
+/* line 9, ../scss/_pastmeetings.scss */
 .past_meetings ol li {
   display: inline-block;
   border: #555555 solid 5px;
@@ -392,7 +355,7 @@ header .title {
   max-width: 25em;
   width: 75%;
 }
-/* line 20, ../scss/_pastmeetings.scss */
+/* line 19, ../scss/_pastmeetings.scss */
 .past_meetings section {
   margin-left: 15px;
   margin-right: 15px;
@@ -402,28 +365,27 @@ header .title {
   float: left;
   width: 19em;
 }
-/* line 29, ../scss/_pastmeetings.scss */
+/* line 28, ../scss/_pastmeetings.scss */
 .past_meetings h1 {
   font-family: "Avenir Next LT W01 Demi";
   font-size: 1em;
   font-weight: 100;
   text-transform: uppercase;
 }
-/* line 35, ../scss/_pastmeetings.scss */
+/* line 34, ../scss/_pastmeetings.scss */
 .past_meetings h2 {
   font-size: 1.2em;
   padding: 1%;
-  margin-bottom: 1em;
 }
-/* line 40, ../scss/_pastmeetings.scss */
+/* line 38, ../scss/_pastmeetings.scss */
 .past_meetings h3 {
   font-size: 1em;
 }
-/* line 43, ../scss/_pastmeetings.scss */
+/* line 41, ../scss/_pastmeetings.scss */
 .past_meetings time {
   font-size: 1.2em;
 }
-/* line 45, ../scss/_pastmeetings.scss */
+/* line 43, ../scss/_pastmeetings.scss */
 .past_meetings time:before {
   content: '\00a0';
   background-color: #a3cd39;
@@ -433,7 +395,7 @@ header .title {
   vertical-align: middle;
   margin-right: 6px;
 }
-/* line 54, ../scss/_pastmeetings.scss */
+/* line 52, ../scss/_pastmeetings.scss */
 .past_meetings time:after {
   content: '\00a0';
   background-color: #a3cd39;
@@ -443,24 +405,24 @@ header .title {
   vertical-align: middle;
   margin-left: 6px;
 }
-/* line 64, ../scss/_pastmeetings.scss */
+/* line 62, ../scss/_pastmeetings.scss */
 .past_meetings .button {
+  margin-top: 2em;
   margin-bottom: 1em;
   font-family: "Avenir Next LT W01 Demi";
 }
-/* line 67, ../scss/_pastmeetings.scss */
+/* line 66, ../scss/_pastmeetings.scss */
 .past_meetings .button img {
   margin-top: 3px;
   margin-left: 9px;
   position: absolute;
 }
-/* line 72, ../scss/_pastmeetings.scss */
+/* line 71, ../scss/_pastmeetings.scss */
 .past_meetings .button a {
   padding: 6px 8px 6px 30px;
   background-color: white;
-  color: #555555;
 }
-/* line 76, ../scss/_pastmeetings.scss */
+/* line 74, ../scss/_pastmeetings.scss */
 .past_meetings .button a:hover {
   background-color: #231F20;
   -moz-transition: background-color 0.25s, -moz-transform 0.25s;
@@ -469,8 +431,8 @@ header .title {
   transition: background-color 0.25s, transform 0.25s;
 }
 
-@media (min-width: 650px) {
-  /* line 90, ../scss/_pastmeetings.scss */
+@media (min-width: 800px) {
+  /* line 88, ../scss/_pastmeetings.scss */
   .past_meetings h1:after {
     content: '\00a0';
     background-color: #555555;
@@ -480,7 +442,7 @@ header .title {
     vertical-align: middle;
     margin-left: 20px;
   }
-  /* line 99, ../scss/_pastmeetings.scss */
+  /* line 97, ../scss/_pastmeetings.scss */
   .past_meetings h1:before {
     content: '\00a0';
     background-color: #555555;
@@ -490,19 +452,13 @@ header .title {
     vertical-align: middle;
     margin-right: 20px;
   }
-  /* line 110, ../scss/_pastmeetings.scss */
+  /* line 108, ../scss/_pastmeetings.scss */
   .past_meetings ol li {
-    display: inline-block;
-    border: #555555 solid 5px;
-    margin: 1em 1em;
-    padding: 1.5em 1em 0.5em 1em;
     width: 35%;
-    min-width: 1em;
-    max-width: 25em;
   }
 }
 @media (min-width: 1500px) {
-  /* line 124, ../scss/_pastmeetings.scss */
+  /* line 116, ../scss/_pastmeetings.scss */
   .past_meetings ol {
     padding: 0 13%;
   }
@@ -523,11 +479,35 @@ header .title {
 }
 /* line 12, ../scss/_social.scss */
 .social p {
-  margin-right: 12%;
-  margin-left: 12%;
+  padding: 0 12%;
 }
 
+/* line 16, ../scss/_social.scss */
+.tweets {
+  background-color: #7e9f2c;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  text-align: center;
+}
 /* line 17, ../scss/_social.scss */
+.tweets h1 {
+  font-size: 1em;
+}
+/* line 24, ../scss/_social.scss */
+.tweets ul {
+  padding-right: 3.5%;
+  padding-left: 3.5%;
+}
+/* line 27, ../scss/_social.scss */
+.tweets ul li {
+  display: inline-block;
+  margin: 1em 1em;
+  padding: 0em 1em;
+  max-width: 20em;
+  width: 75%;
+}
+
+/* line 36, ../scss/_social.scss */
 .icon-twitter:before, .icon-github:after {
   font-family: 'Social-icons';
   speak: none;
@@ -541,36 +521,34 @@ header .title {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 29, ../scss/_social.scss */
+/* line 48, ../scss/_social.scss */
 .icon-twitter:before {
   content: "\e000";
 }
 
-/* line 32, ../scss/_social.scss */
+/* line 51, ../scss/_social.scss */
 .icon-github:after {
   content: "\e001";
-  padding-left: .25em;
 }
 
 @media (min-width: 880px) {
-  /* line 39, ../scss/_social.scss */
+  /* line 57, ../scss/_social.scss */
   .social .icon-twitter:before {
-    margin-top: -1em;
-    padding-left: .25em;
-    float: right;
-    margin-right: 1.75em;
+    position: absolute;
+    margin-left: 3.8em;
+    margin-top: -0.9em;
   }
-  /* line 45, ../scss/_social.scss */
+  /* line 62, ../scss/_social.scss */
   .social .icon-github:after {
-    margin-top: -1em;
-    margin-right: 0.5em;
-    float: right;
+    position: absolute;
+    margin-left: 5.05em;
+    margin-top: -0.9em;
   }
-  /* line 50, ../scss/_social.scss */
+  /* line 67, ../scss/_social.scss */
   .social p {
-    margin-right: 14em;
-    padding-left: 7%;
-    padding: 1em 0;
+    display: inline-block;
+    max-width: 38em;
+    margin-left: -12em;
   }
 }
 /* FOOTER */

@@ -16,11 +16,8 @@
 		margin: 2em 1em 7em 1em;
 		padding-top: 2em;
 		padding-bottom: 1em;
-		width: 20em;
-		height: 15em;
-	}
-	.sparkbox{
-		margin-bottom: 7em;
+		width: 60%;
+		min-width: 19.5em;
 	}
 	.little_lines{
 		margin-bottom: 2em;
@@ -59,7 +56,6 @@
 		width:19em;
 	}
 	.button {
-  	margin: 55px;
   	margin-bottom: 3em;
  	 	margin-top: 2em;
  	 	height: 12px;
@@ -86,15 +82,13 @@
 	color: black;
 	font-size: 1em;
 	display: inline-block;
-	float: left;
-	margin-left: 6.2em;
+	position: absolute;
+	margin-left: 1.95em;
 }
 .arrow-down{
-	width: 0em;
-	height: 0em;
-	border-left: 91px solid transparent;
-	border-right: 90px solid transparent;
-	border-top: 35px solid $green;
+	border-left: 5.9em solid transparent;
+	border-right: 5.7em solid transparent;
+	border-top: 2.4em solid #a3cd39;
 	margin-top: -1.25em;
 	display: inline-block;
 }
@@ -105,7 +99,8 @@
 @media(min-width: 740px){
 	.upcoming_meetings{
 		article{
-			margin: 2em 1em 3em 1em;
+			width: 30%;
+			max-width: 28em;
 		}
 		.sparkbox{
 			margin-bottom: 3em;
