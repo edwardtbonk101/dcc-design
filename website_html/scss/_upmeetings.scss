@@ -22,14 +22,14 @@
 	.little_lines{
 		margin-bottom: 2em;
 	}
-	time{
-		color: $green;
-		font-family:$font2;
-		position: absolute;
-		margin-left: .85em;
-		margin-top: -6em;
-		font-size: 1.5em;
-		letter-spacing: .2em;
+	.time{
+		margin-top: -8em;		
+		time{
+			color: $green;
+			font-family:$font2;
+			font-size: 1.5em;
+			letter-spacing: .2em;
+		}
 	}
 	h1 {
 		font-size: 1em;
@@ -75,15 +75,12 @@
 	}
 }
 .block{
-	background-color: $green;
-	margin-top: -5.5em;
+	background-color: #a3cd39;
 	width: 5em;
 	padding: 1.25em;
 	color: black;
 	font-size: 1em;
 	display: inline-block;
-	position: absolute;
-	margin-left: 1.95em;
 }
 .arrow-down{
 	border-left: 5.9em solid transparent;
@@ -96,7 +93,7 @@
 	clear:left;
 }
 
-@media(min-width: 740px){
+@include mq(740px){
 	.upcoming_meetings{
 		article{
 			width: 30%;

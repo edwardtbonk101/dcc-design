@@ -104,21 +104,20 @@ header h2 {
 }
 /* line 34, ../scss/_header.scss */
 header img {
-  position: relative;
   width: 14em;
 }
-/* line 38, ../scss/_header.scss */
+/* line 37, ../scss/_header.scss */
 header .title {
   margin-top: -2em;
 }
 
-/* line 43, ../scss/_header.scss */
+/* line 42, ../scss/_header.scss */
 .text_left:before {
   content: '> ';
   color: #a3cd39;
 }
 
-/* line 47, ../scss/_header.scss */
+/* line 46, ../scss/_header.scss */
 .text_right:after {
   content: '< ';
   margin-left: 6px;
@@ -126,61 +125,61 @@ header .title {
 }
 
 @media (min-width: 605px) {
-  /* line 54, ../scss/_header.scss */
+  /* line 53, ../scss/_header.scss */
   header b {
     border-top: #bfbfbf solid 2px;
     border-bottom: #bfbfbf solid 2px;
     padding: 1.5em 0em 1.5em 0em;
   }
-  /* line 59, ../scss/_header.scss */
+  /* line 58, ../scss/_header.scss */
   header .text_left {
     margin-right: 0em;
   }
-  /* line 62, ../scss/_header.scss */
+  /* line 61, ../scss/_header.scss */
   header .text_right {
     margin-top: 0em;
     display: inline;
   }
-  /* line 66, ../scss/_header.scss */
+  /* line 65, ../scss/_header.scss */
   header .title {
     margin-top: -2em;
   }
-  /* line 69, ../scss/_header.scss */
+  /* line 68, ../scss/_header.scss */
   header .logo {
     margin-top: 2em;
     padding: 3em 2em;
   }
 }
 @media (min-width: 900px) {
-  /* line 77, ../scss/_header.scss */
+  /* line 76, ../scss/_header.scss */
   header b {
     border-top: #bfbfbf solid 2px;
     border-bottom: #bfbfbf solid 2px;
     padding: 1.5em;
   }
-  /* line 82, ../scss/_header.scss */
+  /* line 81, ../scss/_header.scss */
   header .logo {
     margin-top: -11em;
     margin-bottom: 8em;
   }
-  /* line 86, ../scss/_header.scss */
+  /* line 85, ../scss/_header.scss */
   header .text_left {
     margin-right: 16em;
   }
-  /* line 89, ../scss/_header.scss */
+  /* line 88, ../scss/_header.scss */
   header .text_right {
     margin-top: 0em;
     margin-right: -0.5em;
   }
-  /* line 93, ../scss/_header.scss */
+  /* line 92, ../scss/_header.scss */
   header h2 {
     padding: 40px;
   }
-  /* line 96, ../scss/_header.scss */
+  /* line 95, ../scss/_header.scss */
   header img {
     width: 16em;
   }
-  /* line 99, ../scss/_header.scss */
+  /* line 98, ../scss/_header.scss */
   header .title {
     margin-bottom: 10em;
     margin-top: -2em;
@@ -215,12 +214,13 @@ header .title {
   margin-bottom: 2em;
 }
 /* line 25, ../scss/_upmeetings.scss */
-.upcoming_meetings time {
+.upcoming_meetings .time {
+  margin-top: -8em;
+}
+/* line 27, ../scss/_upmeetings.scss */
+.upcoming_meetings .time time {
   color: #a3cd39;
   font-family: "outagecut";
-  position: absolute;
-  margin-left: .85em;
-  margin-top: -6em;
   font-size: 1.5em;
   letter-spacing: .2em;
 }
@@ -278,17 +278,14 @@ header .title {
 /* line 77, ../scss/_upmeetings.scss */
 .block {
   background-color: #a3cd39;
-  margin-top: -5.5em;
   width: 5em;
   padding: 1.25em;
   color: black;
   font-size: 1em;
   display: inline-block;
-  position: absolute;
-  margin-left: 1.95em;
 }
 
-/* line 88, ../scss/_upmeetings.scss */
+/* line 85, ../scss/_upmeetings.scss */
 .arrow-down {
   border-left: 5.9em solid transparent;
   border-right: 5.7em solid transparent;
@@ -297,22 +294,22 @@ header .title {
   display: inline-block;
 }
 
-/* line 95, ../scss/_upmeetings.scss */
+/* line 92, ../scss/_upmeetings.scss */
 .location_note {
   clear: left;
 }
 
 @media (min-width: 740px) {
-  /* line 101, ../scss/_upmeetings.scss */
+  /* line 98, ../scss/_upmeetings.scss */
   .upcoming_meetings article {
     width: 30%;
     max-width: 28em;
   }
-  /* line 105, ../scss/_upmeetings.scss */
+  /* line 102, ../scss/_upmeetings.scss */
   .upcoming_meetings .sparkbox {
     margin-bottom: 3em;
   }
-  /* line 109, ../scss/_upmeetings.scss */
+  /* line 106, ../scss/_upmeetings.scss */
   .upcoming_meetings h1:before {
     content: '\00a0';
     background-color: white;
@@ -322,7 +319,7 @@ header .title {
     vertical-align: middle;
     margin-right: 20px;
   }
-  /* line 118, ../scss/_upmeetings.scss */
+  /* line 115, ../scss/_upmeetings.scss */
   .upcoming_meetings h1:after {
     content: '\00a0';
     background-color: white;
@@ -478,36 +475,46 @@ header .title {
   display: inline-block;
 }
 /* line 12, ../scss/_social.scss */
+.social .icons {
+  margin: 0 auto;
+}
+/* line 15, ../scss/_social.scss */
 .social p {
-  padding: 0 12%;
+  padding: 0 15%;
 }
 
-/* line 16, ../scss/_social.scss */
-.tweets {
+/* line 19, ../scss/_social.scss */
+#tweets {
+  display: none;
   background-color: #7e9f2c;
   padding-bottom: 1em;
   padding-top: 1em;
   text-align: center;
 }
-/* line 17, ../scss/_social.scss */
-.tweets h1 {
+/* line 21, ../scss/_social.scss */
+#tweets h1 {
   font-size: 1em;
 }
-/* line 24, ../scss/_social.scss */
-.tweets ul {
+/* line 28, ../scss/_social.scss */
+#tweets ul {
   padding-right: 3.5%;
   padding-left: 3.5%;
 }
-/* line 27, ../scss/_social.scss */
-.tweets ul li {
+/* line 31, ../scss/_social.scss */
+#tweets ul li {
   display: inline-block;
-  margin: 1em 1em;
   padding: 0em 1em;
   max-width: 20em;
   width: 75%;
+  vertical-align: top;
+}
+/* line 39, ../scss/_social.scss */
+#tweets span {
+  font-size: 0.85em;
+  font-style: italic;
 }
 
-/* line 36, ../scss/_social.scss */
+/* line 44, ../scss/_social.scss */
 .icon-twitter:before, .icon-github:after {
   font-family: 'Social-icons';
   speak: none;
@@ -518,31 +525,38 @@ header .title {
   text-transform: none;
   line-height: 1;
   color: black;
+  position: absolute;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 48, ../scss/_social.scss */
+/* line 57, ../scss/_social.scss */
 .icon-twitter:before {
   content: "\e000";
-  position: absolute;
-  margin-left: -1.05em;
 }
 
-/* line 53, ../scss/_social.scss */
+/* line 60, ../scss/_social.scss */
 .icon-github:after {
   content: "\e001";
-  position: absolute;
-  margin-left: 0.2em;
 }
 
-/* line 59, ../scss/_social.scss */
+/* line 63, ../scss/_social.scss */
+.icon-github {
+  padding-right: 9em;
+}
+
+/* line 66, ../scss/_social.scss */
+.icon-twitter {
+  padding-left: 1em;
+}
+
+/* line 70, ../scss/_social.scss */
 .icon-twitter:hover {
   opacity: 0.5;
   filter: alpha(opacity=50);
   /* For IE8 and earlier */
 }
 
-/* line 63, ../scss/_social.scss */
+/* line 74, ../scss/_social.scss */
 .icon-github:hover {
   opacity: 0.5;
   filter: alpha(opacity=50);
@@ -550,25 +564,20 @@ header .title {
 }
 
 @media (min-width: 895px) {
-  /* line 68, ../scss/_social.scss */
+  /* line 79, ../scss/_social.scss */
   .social {
     padding: 2.5em 0;
   }
-  /* line 70, ../scss/_social.scss */
-  .social .icon-twitter:before {
-    margin-left: 3.8em;
-    margin-top: -0.9em;
+  /* line 81, ../scss/_social.scss */
+  .social .icons {
+    max-width: 51em;
+    margin: 0 auto;
   }
-  /* line 74, ../scss/_social.scss */
-  .social .icon-github:after {
-    margin-left: 5.05em;
-    margin-top: -0.9em;
-  }
-  /* line 78, ../scss/_social.scss */
+  /* line 85, ../scss/_social.scss */
   .social p {
-    display: inline-block;
+    float: left;
     max-width: 38em;
-    margin-left: -12em;
+    padding: 0;
   }
 }
 /* FOOTER */

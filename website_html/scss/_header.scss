@@ -32,7 +32,6 @@ header{
 		padding: 40px;
 	}
 	img{
-		position: relative;
 		width: 14em;
 	}
 	.title{
@@ -49,7 +48,7 @@ header{
     margin-left: 6px;
     color: $green;
 }
-@media(min-width: 605px){
+@include mq(605px){
 	header{
 		b{
 			border-top: $llgray solid 2px;
@@ -72,7 +71,7 @@ header{
 		}
 	}
 }
-@media(min-width: 900px){
+@include mq(900px){
 	header{
 		b{
 			border-top: $llgray solid 2px;

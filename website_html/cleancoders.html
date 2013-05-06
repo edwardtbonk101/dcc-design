@@ -2,22 +2,31 @@
 <html>
 <head>
 	<title>Dayton Clean Coder's</title>
-	<link rel="stylesheet" href="css/base.css">
 	<meta name="description" content="Dayton Clean Coders is a monthly meetup of web developers who have a desire to share, learn and contribute to a better web"</meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if lt IE 9]> <script src="js/HTML5shiv.js"></script> <![endif]-->
+	<!--[if gt IE 8]><!--> <link rel="stylesheet" href="css/mq.css"> <!--<![endif]-->
+	<!--[if lt IE 9]>  <link rel="stylesheet" href="css/nomq.css"> <![endif]-->
 </head>
 <body>
 	<header>
+		<hgroup>
 		<img src='img/DCClogo.png' alt='Dayton Clean Coders (logo)'>
 		<p class='logo'><b class='text_left'>exploring patterns, practices, </b><b class='	text_right'>and tools for sustainable code</b></p>
+	</hgroup>
 		<div class = 'info'>
-			<p>Dayton Clean Coders is a monthly meetup of web developers who have a 	desire to share, learn and contribute to a better web.</p>
+			<p>Dayton Clean Coders is a monthly meetup of web developers who have a desire to share, learn and contribute to a better web.</p>
 		</div>
 	</header>
 	<section class='upcoming_meetings'>
 		<h1>Upcoming Meetings</h1>
 			<article class='sparkbox'>
-				<time datetime="2013-09-03">03/09/13</time>
-				<h2 class ='block'>Meet <br>Here</h2>
+				<div class='time'>
+					<time datetime="2013-09-03">03/09/13</time>
+				</div>
+				<div class='block_top'>
+					<h2 class='block'>Meet<br>Here</h2>
+				</div>
 				<div class="arrow-down"></div>
 				<h2>Sparkbox</h2>
 				<p class='address'>411 E Fifth Street<br>Dayton, OH 45402</p>
@@ -27,8 +36,12 @@
 				</div>
 			</article>
 			<article class='little_lines'>
-				<time datetime="2013-19-03">03/19/13</time>
-				<h2 class='block'>Meet <br>Here</h2>
+				<div class='time'>
+					<time datetime="2013-19-03">03/19/13</time>
+				</div>
+				<div class='block_top'>
+					<h2 class='block'>Meet<br>Here</h2>
+				</div>
 				<div class='arrow-down'></div>
 				<h2>Little Lines</h2>
 				<p class='address'>50 Chestnut St, Suite 224<br>Beavercreek, OH 45440</p>
@@ -44,7 +57,7 @@
 		<ol>
 			<li>
 				<time datetime="2013-09-02">02/09/13</time>
-				<h2>This is an exageration of a very long title. I hope none of them are actually 	this long.</h2>
+				<h2>This is an exaggeration of a very long title. I hope none of them are actually 	this long.</h2>
 				<div class='button'> 
 					<img src='img/check.png' alt='Check Picture'>
 					<a href="" alt='View Code (button)'>View Code</a>
@@ -77,22 +90,26 @@
 		</ol>
 	</section>
 	<div class='social clearfix'>
-		<p>Anyone interested in learning more about building a better web is welcome to attend	 	We hope to see you at our next meetup! <b class='social_text'>In the meantime,follow	us.</b></p>
-		<div class ='icon-github' alt='Github Icons'>
-		</div>
-		<div class ='icon-twitter' alt='Twitter Icon'>
+		<div class='icons'>
+			<p>Anyone interested in learning more about building a better web is welcome to attend. We hope to see you at our next meetup! <b class='social_text'>In the meantime,follow	us.</b></p>
+			<div class ='icon-github' alt='Github Icons'>
+				<a href='https://github.com/DaytonCleanCoders' alt='Clean Coders Twitter Link'></a>
+			</div>
+			<div class ='icon-twitter' alt='Twitter Icon'>
+				<a href='https://twitter.com/DaytonCleanCode' alt='Clean Coders Twitter Link'></a>
+			</div>
 		</div>
 	</div>
-	<aside class='tweets'>
-		<h1>Recent Tweets</h1>
-		<ul id="twitter_update_list"><li>&nbsp;</li></ul>
+	<aside id='tweets'>
+			<div id='tweet_container'>
+			</div>
 	</aside>
 	<footer>
 		<p><small>&#169; 2013 Sparkbox &#38; Little Lines. All rights Reserved.</small></p>
 	</footer>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-  <script type="text/javascript" src="https://api.twitter.com/1/statuses/user_timeline.json?screen_name=DaytonCleanCode&callback=twitterCallback2&count=2"></script>
-	<script src="script.js"></script>
+  <script src="js/jquery.ba-throttle-debounce.min.js"></script>
+  <script src="js/chirp.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

@@ -82,7 +82,7 @@
   }
 }
 
-@media(min-width: 800px){
+@include mq(800px){
 	.past_meetings{
 	h1{
 		&:after{
@@ -111,7 +111,7 @@
 		}
 	}	
 }
-@media(min-width: 1500px){
+@include mq(1500px){
 	.past_meetings{
 		ol{
 			padding:(0 13%);

@@ -1,0 +1,19 @@
+$default-feature: 'min-width: ' !default;
+$breakpoint: false; // initializing this variable
+ 
+@mixin mq($theQuery, $serveToOldIE: true) {
+  @if $mq-support { // mq support
+    @if type-of( $theQuery ) == 'number' {
+      $breakpoint: $default-feature + $theQuery;
+    } @else {
+      $breakpoint: $theQuery;
+    }
+    @media ( $breakpoint ) {
+      @content;
+    }
+  } @else { // no mq support
+    @if $serveToOldIE {
+      @content;
+    }
+  }
+}

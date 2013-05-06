@@ -1,0 +1,420 @@
+/* FONTS */
+@font-face {
+    font-family: 'outagecut';
+    src: url('Fonts/outage_cut-webfont.eot');
+    src: url('Fonts/outage_cut-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/outage_cut-webfont.woff') format('woff'),
+         url('Fonts/outage_cut-webfont.ttf') format('truetype'),
+         url('Fonts/outage_cut-webfont.svg#outagecut') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=229f654c-f062-4aa1-9cd0-067c8b3f856d");
+@font-face{
+font-family:"Avenir Next LT W01 Demi";
+src:url("Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix");
+src:url("Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"),url("Fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"),url("Fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("truetype"),url("Fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg");
+}
+
+@font-face {
+	font-family: 'Social-icons';
+	src:url('fonts/Social-icons.eot');
+	src:url('fonts/Social-icons.eot?#iefix') format('embedded-opentype'),
+		url('fonts/Social-icons.woff') format('woff'),
+		url('fonts/Social-icons.ttf') format('truetype'),
+		url('fonts/Social-icons.svg#Social-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* BODY */
+body{
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkAIJnz579B9FSUlKMjCAOiAGTwBRA1wIAKCAXZxKmiW0AAAAASUVORK5CYII=) 
+  repeat;
+	margin:0;
+	font-family:"Avenir Next LT W01 Demi";
+}
+/* HEADER */
+header{
+	margin-top: 5em;
+	text-align: center;
+  font-size: .65em; 
+}
+header b{
+	border-top: #bfbfbf solid 2px;
+	border-bottom: #bfbfbf solid 2px;
+	padding: 1.5em;
+}
+header .logo{
+	font-family: 'outagecut';
+	color: #bfbfbf;
+	margin-top: -11em;
+	margin-bottom: 8em;
+	background-color: white;
+	padding: 3.5em;
+	font-size: 1.2em; 
+}
+.text_left{
+	margin-right: 16em;
+}
+
+.text_left:before {
+    content: '> ';
+    color: #a3cd39;
+}
+.text_right:after {
+    content: '< ';
+    margin-left: 6px;
+    color: #a3cd39;
+}
+header .info{
+	font-size: 2em;
+	padding: 3em;
+	background-color: #8a8a8a;
+	margin-bottom: 0;
+	border-top: #a3cd39 solid 8px;
+}
+
+header h2{
+	padding: 40px;
+}
+header img{
+	position: relative;
+	width: 16em;
+}
+.title{
+	margin-bottom: 10em;
+	margin-top: -2em;
+}
+/* INFO */
+.info{
+	background-color: #8a8a8a;
+	padding:1em;
+	text-align: center;
+	border-top: #a3cd39 solid 8px;
+	font-size: 1.5em;
+}
+.info p{
+	padding-left: 2em;
+	padding-right: 2em;
+}
+/* UPCOMING MEETINGS */
+.upcoming_meetings{
+	width:100%;
+	margin-bottom: 1em;
+	text-align: center;
+	background-image: url("img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  background-position: center;
+  background-color: #3f3d3d;
+  float: left;
+}
+
+.upcoming_meetings article{
+	border: white solid 5px;
+	display: inline-block;
+	margin: 2em 1em 4em 1em;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	width: 20em;
+	height: 15em;
+}
+
+.upcoming_meetings time{
+	color: #a3cd39;
+	font-family: 'outagecut';
+	position: absolute;
+	margin-left: .85em;
+	margin-top: -6em;
+	font-size: 1.5em;
+	letter-spacing: .2em;
+}
+.block{
+	background-color: #a3cd39;
+	margin-top: -5.5em;
+	width: 5em;
+	padding: 1.25em;
+	color: black;
+	font-size: 1em;
+	display: inline-block;
+	float: left;
+	margin-left: 6.2em;
+}
+
+.arrow-down{
+	width: 0em;
+	height: 0em;
+	border-left: 91px solid transparent;
+	border-right: 90px solid transparent;
+	border-top: 35px solid #a3cd39;
+	margin-top: -1.25em;
+	display: inline-block;
+}
+.upcoming_meetings h1 {
+	font-size: 1em;
+	font-weight: 100;
+	padding-top: .5em;
+	padding-bottom: 6em;
+	text-transform: uppercase;
+}
+
+.upcoming_meetings h1:before{
+	content: '\00a0';
+	background-color: white;
+	display: inline-block;
+	width: 35%;
+	height: 1px;
+	vertical-align: middle;
+	margin-right: 20px;
+
+}
+.upcoming_meetings h1:after{
+	content: '\00a0';
+	background-color: white;
+	display: inline-block;
+	width: 35%;
+	height: 1px;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+.upcoming_meetings h2{
+	font-family: 'outagecut';
+	letter-spacing: 0.15em;
+}
+
+.upcoming_meetings {
+	color: white;
+}
+
+.upcoming_meetings section{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: white solid 5px;
+	float:left;
+	width:19em;
+}
+
+.address{
+	font-size: 1.3em;
+}
+.wrap{
+	display: inline-block;
+}
+.location_note{
+	clear:left;
+}
+
+/* PAST MEETINGS */
+.past_meetings{
+	font-family: 'outagecut';
+	text-align: center;
+	padding-bottom: 1em;
+	color: #555555;
+	border-top: #555555 solid 2px;
+}
+
+.past_meetings li{
+	display: inline-block;
+	border: #555555 solid 5px;
+	margin: 1em 1em;
+	padding: 1.5em 1em;
+}
+.past_meetings section{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border: #555555 solid 5px;
+	float:left;
+	width:19em;
+}
+.past_meetings h1 {
+	font-family:"Avenir Next LT W01 Demi";
+	font-size: 1em;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.past_meetings h1:before{
+	content: '\00a0';
+	background-color: #555555;
+	display: inline-block;
+	width: 35%;
+	height: 1px;
+	vertical-align: middle;
+	margin-right: 20px;
+
+}
+.past_meetings h1:after{
+	content: '\00a0';
+	background-color: #555555;
+	display: inline-block;
+	width: 35%;
+	height: 1px;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+
+.past_meetings h2{
+	font-size: 1.2em;
+	max-width: 17em;
+}
+
+.past_meetings h3{
+	font-size: 1em;
+}
+
+.past_meetings time:before{
+	content: '\00a0';
+	background-color: #a3cd39;
+	display: inline-block;
+	width: 18px;
+	height: 3px;
+	vertical-align: middle;
+	margin-right: 6px;
+
+}
+.past_meetings time:after{
+	content: '\00a0';
+	background-color: #a3cd39;
+	display: inline-block;
+	width: 18px;
+	height: 3px;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+
+.past_meetings time{
+	font-size: 1.2em;
+}
+/* SOCIAL */
+.icon-twitter:before, .icon-github:before {
+	font-family: 'Social-icons';
+	speak: none;
+	font-size: 4em;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	color: black;
+	display: inline-block;
+	float: right;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+	content: "\e000";
+	padding-left: .5em;
+}
+.icon-github:before {
+	content: "\e001";
+	padding-right: 1em;
+	padding-left: .25em;
+}
+
+.icon-twitter:hover{
+	opacity: .5;
+}
+.icon-github:hover{
+  opacity: .5;
+}
+
+.social{
+	color: white;
+	background-color: #a3cd39;
+	text-align: center;
+	padding-left: 4em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-top: #7e9f2c solid 2px;
+}
+
+.social_text{
+	color:black;
+}
+
+/* FOOTER */
+
+footer{
+	padding:1em;
+	background-color: black;
+}
+
+small{
+		font-size: .70em;
+		padding-left: 5em;
+}
+
+footer p{
+	color: #4c4c4c;
+	text-transform: uppercase;
+}
+
+/* BUTTON */
+ .upcoming_meetings .button {
+  margin: 55px;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  height: 12px;
+  text-align: center;
+   }
+  .button li {
+  margin-right: auto;
+    list-style: none;
+    text-align: center; }
+  .button a {
+  	color: #3f3d3d;
+  	margin-right: auto;
+    list-style: none;
+    background-color: #8A8A8A;
+    padding: 5px 14px;
+    text-align: center;
+    text-decoration: none;
+    font-family:"Avenir Next LT W01 Demi";
+    letter-spacing: .1em; }
+  .button a:hover {
+    background-color: #231F20; }
+  .button img {
+    margin-top: 3px;
+		margin-left: 9px;
+		position: absolute;}
+ .past_meetings .button{
+ 	margin-bottom: 1em;
+ }
+ .past_meetings .button a{
+ 		padding: 6px 8px 6px 30px;
+ 		background-color: white;
+ 		color: #555555;
+ 		font-family:"Avenir Next LT W01 Demi";
+ }
+ 	.button a:hover {
+    background-color: #231F20; 
+    -moz-transition: background-color .25s, -moz-transform .25s;
+    -webkit-transition: background-color .25s, -webkit-transform .25s;
+    -o-transition: background-color .25s, -o-transform .25s;
+    transition: background-color .25s, transform .25s;
+  }
+
+/* BROWSER FIXES */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
